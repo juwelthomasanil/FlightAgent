@@ -26,9 +26,16 @@ public static class DependencyInjection
 
         services.AddSingleton(kernelBuilder.Build());
 
+        // Register HttpClient for health checks and external API calls
+        services.AddHttpClient();
+
         // Register services
         services.AddScoped<IFlightSearchService, Services.SemanticFlightSearchService>();
         services.AddScoped<IBookingService, Services.SemanticBookingService>();
+
+        // Register health checks with custom external API check
+        services.AddHealthChecks()
+            .AddCheck<Health.ExternalApiHealthCheck>("external_api", tags: new[] { "external" });
 
         return services;
     }

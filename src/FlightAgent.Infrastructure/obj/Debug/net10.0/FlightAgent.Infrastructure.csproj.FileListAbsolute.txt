@@ -1,0 +1,15 @@
+D:\Project\FlightAgent\src\FlightAgent.Infrastructure\obj\Debug\net10.0\FlightAgent.Infrastructure.csproj.AssemblyReference.cache
+D:\Project\FlightAgent\src\FlightAgent.Infrastructure\obj\Debug\net10.0\FlightAgent.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\FlightAgent\src\FlightAgent.Infrastructure\obj\Debug\net10.0\FlightAgent.Infrastructure.AssemblyInfoInputs.cache
+D:\Project\FlightAgent\src\FlightAgent.Infrastructure\obj\Debug\net10.0\FlightAgent.Infrastructure.AssemblyInfo.cs
+D:\Project\FlightAgent\src\FlightAgent.Infrastructure\obj\Debug\net10.0\FlightAgent.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Project\FlightAgent\src\FlightAgent.Infrastructure\bin\Debug\net10.0\FlightAgent.Infrastructure.deps.json
+D:\Project\FlightAgent\src\FlightAgent.Infrastructure\bin\Debug\net10.0\FlightAgent.Infrastructure.dll
+D:\Project\FlightAgent\src\FlightAgent.Infrastructure\bin\Debug\net10.0\FlightAgent.Infrastructure.pdb
+D:\Project\FlightAgent\src\FlightAgent.Infrastructure\bin\Debug\net10.0\FlightAgent.Core.dll
+D:\Project\FlightAgent\src\FlightAgent.Infrastructure\bin\Debug\net10.0\FlightAgent.Core.pdb
+D:\Project\FlightAgent\src\FlightAgent.Infrastructure\obj\Debug\net10.0\FlightAg.B33A9E0C.Up2Date
+D:\Project\FlightAgent\src\FlightAgent.Infrastructure\obj\Debug\net10.0\FlightAgent.Infrastructure.dll
+D:\Project\FlightAgent\src\FlightAgent.Infrastructure\obj\Debug\net10.0\refint\FlightAgent.Infrastructure.dll
+D:\Project\FlightAgent\src\FlightAgent.Infrastructure\obj\Debug\net10.0\FlightAgent.Infrastructure.pdb
+D:\Project\FlightAgent\src\FlightAgent.Infrastructure\obj\Debug\net10.0\ref\FlightAgent.Infrastructure.dll

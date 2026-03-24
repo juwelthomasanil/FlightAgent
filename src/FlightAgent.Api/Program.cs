@@ -6,11 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
-// Register infrastructure services
+// Register infrastructure services (includes health checks)
 builder.Services.AddInfrastructure(builder.Configuration);
-
-// Register health checks
-builder.Services.AddHealthChecks();
 
 var app = builder.Build();
 

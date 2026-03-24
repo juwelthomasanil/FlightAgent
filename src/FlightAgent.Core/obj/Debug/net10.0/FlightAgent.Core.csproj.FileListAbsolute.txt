@@ -1,0 +1,11 @@
+D:\Project\FlightAgent\src\FlightAgent.Core\bin\Debug\net10.0\FlightAgent.Core.deps.json
+D:\Project\FlightAgent\src\FlightAgent.Core\bin\Debug\net10.0\FlightAgent.Core.dll
+D:\Project\FlightAgent\src\FlightAgent.Core\bin\Debug\net10.0\FlightAgent.Core.pdb
+D:\Project\FlightAgent\src\FlightAgent.Core\obj\Debug\net10.0\FlightAgent.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\FlightAgent\src\FlightAgent.Core\obj\Debug\net10.0\FlightAgent.Core.AssemblyInfoInputs.cache
+D:\Project\FlightAgent\src\FlightAgent.Core\obj\Debug\net10.0\FlightAgent.Core.AssemblyInfo.cs
+D:\Project\FlightAgent\src\FlightAgent.Core\obj\Debug\net10.0\FlightAgent.Core.csproj.CoreCompileInputs.cache
+D:\Project\FlightAgent\src\FlightAgent.Core\obj\Debug\net10.0\FlightAgent.Core.dll
+D:\Project\FlightAgent\src\FlightAgent.Core\obj\Debug\net10.0\refint\FlightAgent.Core.dll
+D:\Project\FlightAgent\src\FlightAgent.Core\obj\Debug\net10.0\FlightAgent.Core.pdb
+D:\Project\FlightAgent\src\FlightAgent.Core\obj\Debug\net10.0\ref\FlightAgent.Core.dll

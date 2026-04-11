@@ -39,4 +39,18 @@ public static class DependencyInjection
 
         return services;
     }
+
+    /// <summary>
+    /// Registers agent plugins and their dependencies into the DI container.
+    /// Note: This registers the services for dependency injection, but does not add them to Semantic Kernel.
+    /// SK wiring must happen in Program.cs where the Kernel instance is available.
+    /// </summary>
+    public static IServiceCollection AddFlightAgentPlugins(this IServiceCollection services)
+    {
+        services.AddMemoryCache(); // Required by WeatherPlugin
+        services.AddSingleton<IAirportPlugin, Plugins.AirportPlugin>();
+        services.AddSingleton<IWeatherPlugin, Plugins.WeatherPlugin>();
+
+        return services;
+    }
 }

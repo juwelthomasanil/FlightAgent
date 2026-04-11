@@ -1,4 +1,5 @@
 using FlightAgent.Infrastructure;
+using Microsoft.SemanticKernel;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +10,18 @@ builder.Services.AddOpenApi();
 // Register infrastructure services (includes health checks)
 builder.Services.AddInfrastructure(builder.Configuration);
 
+// Register agent plugins
+builder.Services.AddFlightAgentPlugins();
+
 var app = builder.Build();
+
+// Wire plugins to Semantic Kernel
+var kernel = app.Services.GetRequiredService<Microsoft.SemanticKernel.Kernel>();
+var airportPlugin = app.Services.GetRequiredService<FlightAgent.Core.Interfaces.IAirportPlugin>();
+var weatherPlugin = app.Services.GetRequiredService<FlightAgent.Core.Interfaces.IWeatherPlugin>();
+
+kernel.Plugins.AddFromObject(airportPlugin, "AirportPlugin");
+kernel.Plugins.AddFromObject(weatherPlugin, "WeatherPlugin");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

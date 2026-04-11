@@ -25,6 +25,11 @@ public class AirportPlugin : IAirportPlugin
         [Description("The 3-letter IATA airport code (e.g., JFK, LHR, CDG)")] string iataCode,
         CancellationToken cancellationToken = default)
     {
+        if (string.IsNullOrWhiteSpace(iataCode))
+        {
+            return Task.FromResult<string?>(null);
+        }
+
         if (_airports.TryGetValue(iataCode, out var airport))
         {
             var result = $"{airport.Name} ({airport.IataCode}) - {airport.City}, {airport.Country}. " +
@@ -40,6 +45,11 @@ public class AirportPlugin : IAirportPlugin
         string iataCode,
         CancellationToken cancellationToken = default)
     {
+        if (string.IsNullOrWhiteSpace(iataCode))
+        {
+            return Task.FromResult<AirportInfo?>(null);
+        }
+
         if (_airports.TryGetValue(iataCode, out var airport))
         {
             return Task.FromResult<AirportInfo?>(airport);

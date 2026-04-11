@@ -1,6 +1,7 @@
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.SemanticKernel;
 using System.ComponentModel;
+using System.Globalization;
 using System.Text.Json;
 using FlightAgent.Core.Interfaces;
 using FlightAgent.Infrastructure.Models;
@@ -15,7 +16,7 @@ namespace FlightAgent.Infrastructure.Plugins;
 public class WeatherPlugin : IWeatherPlugin
 {
     private readonly IMemoryCache _cache;
-    private readonly HttpClient _httpClient;
+    private readonly IHttpClientFactory _httpClientFactory;
     private readonly IAirportPlugin _airportPlugin;
     private static readonly TimeSpan CacheDuration = TimeSpan.FromMinutes(15);
 
@@ -53,11 +54,11 @@ public class WeatherPlugin : IWeatherPlugin
 
     public WeatherPlugin(
         IMemoryCache cache,
-        HttpClient httpClient,
+        IHttpClientFactory httpClientFactory,
         IAirportPlugin airportPlugin)
     {
         _cache = cache;
-        _httpClient = httpClient;
+        _httpClientFactory = httpClientFactory;
         _airportPlugin = airportPlugin;
     }
 
@@ -68,6 +69,11 @@ public class WeatherPlugin : IWeatherPlugin
         [Description("The 3-letter IATA airport code (e.g., JFK, LHR, CDG)")] string iataCode,
         CancellationToken cancellationToken = default)
     {
+        if (string.IsNullOrWhiteSpace(iataCode))
+        {
+            return null;
+        }
+
         var cacheKey = $"weather:{iataCode.ToUpperInvariant()}";
 
         // Check cache per D-17
@@ -101,13 +107,16 @@ public class WeatherPlugin : IWeatherPlugin
 
     private async Task<string?> FetchWeatherAsync(Core.Models.AirportInfo airport, CancellationToken ct)
     {
-        // Build Open-Meteo URL per D-11
+        // Build Open-Meteo URL per D-11 (using InvariantCulture for lat/lon formatting)
+        var lat = airport.Lat.ToString("G", CultureInfo.InvariantCulture);
+        var lon = airport.Lon.ToString("G", CultureInfo.InvariantCulture);
         var url = $"https://api.open-meteo.com/v1/forecast" +
-                  $"?latitude={airport.Lat}&longitude={airport.Lon}" +
+                  $"?latitude={lat}&longitude={lon}" +
                   $"&current=temperature_2m,weathercode,windspeed_10m,winddirection_10m";
 
         // Per D-21: let exceptions bubble — Polly handles resilience at registration level
-        var response = await _httpClient.GetAsync(url, ct);
+        using var httpClient = _httpClientFactory.CreateClient();
+        var response = await httpClient.GetAsync(url, ct);
         response.EnsureSuccessStatusCode();
 
         var json = await response.Content.ReadAsStringAsync(ct);

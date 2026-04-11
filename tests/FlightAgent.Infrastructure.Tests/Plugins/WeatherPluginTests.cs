@@ -16,14 +16,17 @@ public class WeatherPluginTests
 {
     private readonly Mock<IAirportPlugin> _mockAirportPlugin;
     private readonly IMemoryCache _cache;
+    private readonly Mock<IHttpClientFactory> _mockHttpClientFactory;
     private readonly WeatherPlugin _sut;
 
     public WeatherPluginTests()
     {
         _mockAirportPlugin = new Mock<IAirportPlugin>();
         _cache = new MemoryCache(new MemoryCacheOptions());
-        var httpClient = new HttpClient();
-        _sut = new WeatherPlugin(_cache, httpClient, _mockAirportPlugin.Object);
+        _mockHttpClientFactory = new Mock<IHttpClientFactory>();
+        _mockHttpClientFactory.Setup(x => x.CreateClient(It.IsAny<string>()))
+            .Returns(new HttpClient());
+        _sut = new WeatherPlugin(_cache, _mockHttpClientFactory.Object, _mockAirportPlugin.Object);
     }
 
     [Fact]

@@ -1,3 +1,15 @@
+C:\Users\CodexSandboxOffline\.codex\.sandbox\cwd\6b86ccd21c6f6cd1\src\FlightAgent.Core\obj\Debug\net10.0\FlightAgent.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CodexSandboxOffline\.codex\.sandbox\cwd\6b86ccd21c6f6cd1\src\FlightAgent.Core\obj\Debug\net10.0\FlightAgent.Core.AssemblyInfoInputs.cache
+C:\Users\CodexSandboxOffline\.codex\.sandbox\cwd\6b86ccd21c6f6cd1\src\FlightAgent.Core\obj\Debug\net10.0\FlightAgent.Core.AssemblyInfo.cs
+C:\Users\CodexSandboxOffline\.codex\.sandbox\cwd\6b86ccd21c6f6cd1\src\FlightAgent.Core\obj\Debug\net10.0\FlightAgent.Core.csproj.CoreCompileInputs.cache
+C:\Users\CodexSandboxOffline\.codex\.sandbox\cwd\6b86ccd21c6f6cd1\src\FlightAgent.Core\obj\Debug\net10.0\FlightAgent.Core.sourcelink.json
+C:\Users\CodexSandboxOffline\.codex\.sandbox\cwd\6b86ccd21c6f6cd1\src\FlightAgent.Core\obj\Debug\net10.0\FlightAgent.Core.dll
+C:\Users\CodexSandboxOffline\.codex\.sandbox\cwd\6b86ccd21c6f6cd1\src\FlightAgent.Core\obj\Debug\net10.0\refint\FlightAgent.Core.dll
+C:\Users\CodexSandboxOffline\.codex\.sandbox\cwd\6b86ccd21c6f6cd1\src\FlightAgent.Core\obj\Debug\net10.0\FlightAgent.Core.pdb
+C:\Users\CodexSandboxOffline\.codex\.sandbox\cwd\6b86ccd21c6f6cd1\src\FlightAgent.Core\bin\Debug\net10.0\FlightAgent.Core.deps.json
+C:\Users\CodexSandboxOffline\.codex\.sandbox\cwd\6b86ccd21c6f6cd1\src\FlightAgent.Core\bin\Debug\net10.0\FlightAgent.Core.dll
+C:\Users\CodexSandboxOffline\.codex\.sandbox\cwd\6b86ccd21c6f6cd1\src\FlightAgent.Core\bin\Debug\net10.0\FlightAgent.Core.pdb
+C:\Users\CodexSandboxOffline\.codex\.sandbox\cwd\6b86ccd21c6f6cd1\src\FlightAgent.Core\obj\Debug\net10.0\ref\FlightAgent.Core.dll
 D:\Project\FlightAgent\src\FlightAgent.Core\bin\Debug\net10.0\FlightAgent.Core.deps.json
 D:\Project\FlightAgent\src\FlightAgent.Core\bin\Debug\net10.0\FlightAgent.Core.dll
 D:\Project\FlightAgent\src\FlightAgent.Core\bin\Debug\net10.0\FlightAgent.Core.pdb
@@ -5,6 +17,7 @@ D:\Project\FlightAgent\src\FlightAgent.Core\obj\Debug\net10.0\FlightAgent.Core.G
 D:\Project\FlightAgent\src\FlightAgent.Core\obj\Debug\net10.0\FlightAgent.Core.AssemblyInfoInputs.cache
 D:\Project\FlightAgent\src\FlightAgent.Core\obj\Debug\net10.0\FlightAgent.Core.AssemblyInfo.cs
 D:\Project\FlightAgent\src\FlightAgent.Core\obj\Debug\net10.0\FlightAgent.Core.csproj.CoreCompileInputs.cache
+D:\Project\FlightAgent\src\FlightAgent.Core\obj\Debug\net10.0\FlightAgent.Core.sourcelink.json
 D:\Project\FlightAgent\src\FlightAgent.Core\obj\Debug\net10.0\FlightAgent.Core.dll
 D:\Project\FlightAgent\src\FlightAgent.Core\obj\Debug\net10.0\refint\FlightAgent.Core.dll
 D:\Project\FlightAgent\src\FlightAgent.Core\obj\Debug\net10.0\FlightAgent.Core.pdb

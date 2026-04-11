@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\.dotnet",
+    "\\obj",
+    "\\src",
+    "\\src\\FlightAgent.Api",
+    "\\tests"
+  ],
+  "SelectedNode": "\\src\\FlightAgent.Api\\Program.cs",
+  "PreviewInSolutionExplorer": false
+}

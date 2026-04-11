@@ -1,7 +1,7 @@
 # Roadmap: FlightAgent
 
 **Current Version:** 1.0.0
-**Last Updated:** 2026-03-24
+**Last Updated:** 2026-04-11
 
 ## Phase Summary
 
@@ -39,6 +39,14 @@
 - Both plugins registered in DI
 
 **Estimated Effort:** Small
+
+**Plans:** 4 plans
+
+**Plan List:**
+- [ ] 02-01-PLAN.md — Define plugin interfaces (IAirportPlugin, IWeatherPlugin), AirportInfo record, test project scaffold
+- [ ] 02-02-PLAN.md — Implement AirportPlugin with 50 hardcoded airports and [KernelFunction] attributes
+- [ ] 02-03-PLAN.md — Implement WeatherPlugin with Open-Meteo API and 15-minute IMemoryCache
+- [ ] 02-04-PLAN.md — Register plugins in DI via AddFlightAgentPlugins() and wire to Semantic Kernel
 
 ## Phase 3: Flight Search Service
 

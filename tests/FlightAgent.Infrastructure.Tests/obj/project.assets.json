@@ -1222,6 +1222,7 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "FlightAgent.Core": "1.0.0",
+          "Microsoft.Extensions.Caching.Memory": "9.0.0",
           "Microsoft.Extensions.Configuration": "9.0.0",
           "Microsoft.Extensions.DependencyInjection": "9.0.0",
           "Microsoft.Extensions.Diagnostics.HealthChecks": "9.0.0",

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "89Bw198wPkY=",
+  "dgSpecHash": "cxF3xkeNzD4=",
   "success": true,
   "projectFilePath": "D:\\Project\\FlightAgent\\src\\FlightAgent.Infrastructure\\FlightAgent.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,8 @@
     "C:\\Users\\JUWEL\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\8.0.0\\microsoft.bcl.asyncinterfaces.8.0.0.nupkg.sha512",
     "C:\\Users\\JUWEL\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
     "C:\\Users\\JUWEL\\.nuget\\packages\\microsoft.extensions.ai.abstractions\\9.3.0-preview.1.25114.11\\microsoft.extensions.ai.abstractions.9.3.0-preview.1.25114.11.nupkg.sha512",
+    "C:\\Users\\JUWEL\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.0\\microsoft.extensions.caching.abstractions.9.0.0.nupkg.sha512",
+    "C:\\Users\\JUWEL\\.nuget\\packages\\microsoft.extensions.caching.memory\\9.0.0\\microsoft.extensions.caching.memory.9.0.0.nupkg.sha512",
     "C:\\Users\\JUWEL\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.0\\microsoft.extensions.configuration.9.0.0.nupkg.sha512",
     "C:\\Users\\JUWEL\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.0\\microsoft.extensions.configuration.abstractions.9.0.0.nupkg.sha512",
     "C:\\Users\\JUWEL\\.nuget\\packages\\microsoft.extensions.configuration.binder\\9.0.0\\microsoft.extensions.configuration.binder.9.0.0.nupkg.sha512",

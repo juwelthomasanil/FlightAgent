@@ -115,8 +115,10 @@ public class WeatherPlugin : IWeatherPlugin
                   $"&current=temperature_2m,weathercode,windspeed_10m,winddirection_10m";
 
         // Per D-21: let exceptions bubble — Polly handles resilience at registration level
+        using var cts = CancellationTokenSource.CreateLinkedTokenSource(ct);
+        cts.CancelAfter(TimeSpan.FromSeconds(8));
         using var httpClient = _httpClientFactory.CreateClient();
-        var response = await httpClient.GetAsync(url, ct);
+        var response = await httpClient.GetAsync(url, cts.Token);
         response.EnsureSuccessStatusCode();
 
         var json = await response.Content.ReadAsStringAsync(ct);

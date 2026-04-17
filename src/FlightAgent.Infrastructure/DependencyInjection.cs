@@ -1,7 +1,11 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Http.Resilience;
 using Microsoft.SemanticKernel;
 using FlightAgent.Core.Interfaces;
+using FlightAgent.Infrastructure.Plugins;
+using FlightAgent.Infrastructure.Services;
+using System.Net.Http;
 
 namespace FlightAgent.Infrastructure;
 

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FlightAgent.Infrastructure.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+75e94a0742adf1587ed68f11ba12324d8561a7e7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f46303d51194609f45dc7ab3a2e1d1ba13dd4de")]
 [assembly: System.Reflection.AssemblyProductAttribute("FlightAgent.Infrastructure.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FlightAgent.Infrastructure.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

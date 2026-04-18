@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FlightAgent.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f46303d51194609f45dc7ab3a2e1d1ba13dd4de")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06bd3be963a94eb8d47b3ba3ba4d60ed3cec90c4")]
 [assembly: System.Reflection.AssemblyProductAttribute("FlightAgent.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FlightAgent.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
